@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="header">
+        <div class="row">
+            <div class="col-2">
+                Rejestr
+            </div>
+            <div class="col-1">
+                Wartość
+            </div>
+            <div class="col-9">
+                Opis
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" *ngFor= "let item of s7RegsDes; index as i">
+        <div class="col">
+            <div class="register">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="number">
+                            {{ item[0] }}
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="value">
+                            {{ s7Registers[i] }} 
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="description">
+                            <div class="device">
+                                {{item[2]}}
+                            </div>
+                            <div class="des">
+                                {{ item[3] }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+     
+    
+ 
+            </div>
+        </div>
+    </div>
+</div>
+
+

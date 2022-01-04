@@ -1,0 +1,73 @@
+<div class="s7DriveContainer">
+    <h2>Sterownik PLC</h2>
+    <div class="row">
+        <div class="col">
+            <button mat-button disabled="true">
+                <mat-icon  [ngClass]="inputs[0] ? 'switchedOn' : 'switchedOff'">input</mat-icon>
+                <span class="disabledBtn">Wejście 0</span>
+            </button>
+        </div>
+        <div class="col">
+            <button mat-button>
+                <mat-icon  [ngClass]="inputs[1] ? 'switchedOn' : 'switchedOff'">input</mat-icon>
+                <span class="disabledBtn">Wejście 1</span>
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button mat-button>
+                <mat-icon  [ngClass]="inputs[2] ? 'switchedOn' : 'switchedOff'">input</mat-icon>
+                <span class="disabledBtn">Wejście 2</span>
+            </button>
+        </div>
+        <div class="col">
+            <button mat-button>
+                <mat-icon  [ngClass]="inputs[3] ? 'switchedOn' : 'switchedOff'">input</mat-icon>
+                <span class="disabledBtn">Wejście 3</span>
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button mat-button>
+                <mat-icon [ngClass]="inputs[4] ? 'switchedOn' : 'switchedOff'">input</mat-icon>
+                <span class="disabledBtn">Wejście 4</span>
+            </button>
+        </div>
+        <div class="col">
+            <button mat-button>
+                <mat-icon [ngClass]="inputs[5] ? 'switchedOn' : 'switchedOff'">input</mat-icon>
+                <span class="disabledBtn">Wejście 5</span>
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button mat-button (click)="toggleCoil(0)" [disabled]="toggling">
+                <mat-icon [ngClass]="outputs[0] ? 'switchedOn' : 'switchedOff'">play_for_work</mat-icon>
+                Cewka 0
+            </button>
+        </div>    
+        <div class="col">
+            <button mat-button (click)="toggleCoil(1)" [disabled]="toggling">
+                <mat-icon [ngClass]="outputs[1] ? 'switchedOn' : 'switchedOff'">play_for_work</mat-icon>
+                Cewka 1
+            </button>
+        </div>  
+    </div>
+    <div class="row">
+        <div class="col">
+            <button mat-button (click)="toggleCoil(2)" [disabled]="toggling">
+                <mat-icon [ngClass]="outputs[2] ? 'switchedOn' : 'switchedOff'">play_for_work</mat-icon>
+                Cewka 2
+            </button>
+        </div>    
+        <div class="col">
+            <button mat-button (click)="toggleCoil(3)" [disabled]="toggling">
+                <mat-icon [ngClass]="outputs[3] ? 'switchedOn' : 'switchedOff'">play_for_work</mat-icon>
+                Cewka 3
+            </button>
+        </div>  
+    </div>
+</div>

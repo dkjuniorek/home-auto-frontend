@@ -1,0 +1,39 @@
+
+
+
+.header{
+    font-size: medium;
+    text-align: center;
+    margin: 10px;
+}
+
+.register{
+    height: 30px;
+    margin: 10px;
+    font-size: medium;
+    text-align: center;
+
+    .number{
+        height: 30px;
+        font-size: medium;
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+
+    .value{
+        height: 30px;
+        line-height: 30px;
+        font-size: larger;
+        color: orange;
+        width: 100%;
+    }
+
+    .description{
+        font-size: x-small;
+        .device{
+            font-weight: 500;
+            color: orange;
+        }
+    }
+}

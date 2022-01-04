@@ -1,0 +1,40 @@
+.pvStatusContainer {
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+    color:black;
+
+    .powerStatus{
+        margin: 10px;
+        .powerValue{
+            color: orange;
+            font-size: xx-large;
+        }
+    }
+    .energyStatus{
+        margin: 10px;
+        .energyValue{
+            color: orange;
+            font-size: xx-large;
+        }
+    }
+
+}
+
+.isOnline{
+    color: green;
+}
+
+.isOffline{
+    color:gray;
+    font-weight: 300;
+}
+
+.isAlarm{
+    color: red;
+}
+
+.noAlarm{
+    color:gray;
+    font-weight: 300;
+}

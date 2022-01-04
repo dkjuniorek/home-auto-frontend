@@ -1,0 +1,30 @@
+<div class="pvStatusContainer">
+    <h2>Fotowoltaika</h2>
+    <div class="row">
+        <div class="col powerStatus">
+            <span class="powerValue">{{ pvStatus.currentPower }}</span><span>/1700W</span>
+        </div>    
+    </div>
+    <div class="row">
+        <div class="col inverterStatus">
+            <span class="isOnline" *ngIf="pvStatus.isOnline">Aktywny</span>
+            <span class="isOffline" *ngIf="!pvStatus.isOnline">Nieaktywny</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col energyStatus">
+            <span class="energyValue">{{ pvStatus.todayEnergy}}</span>kWh
+        </div>
+        <div class="col energyStatus">
+            <span class="energyValue">{{ pvStatus.totalEnergy}}</span>kWh
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col">
+            <span class="isAlarm" *ngIf="pvStatus.alarm">Alarm</span>
+            <span class="noAlarm" *ngIf="!pvStatus.alarm">Alarm</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+<div class="temperaturesStatusContainer">
+    <h2>Temperatury</h2>
+    <p><span style="font-size: x-large;" [ngStyle]="{'color':temperaturesStatus.outside < 0 ? 'blue' : 'orange'}">{{ temperaturesStatus.outside }}&#176;C</span></p>
+    <p><span style="font-size: x-large;"  [ngStyle]="{'color':temperaturesStatus.basement < 5 ? 'blue' : 'orange'}">{{ temperaturesStatus.basement }}&#176;C</span></p>
+    <p><span style="font-size: x-large;"  [ngStyle]="{'color':temperaturesStatus.home < 19 ? 'blue' : 'orange'}">{{ temperaturesStatus.home }}&#176;C</span></p>
+</div>
